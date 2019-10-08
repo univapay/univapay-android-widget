@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/address_edit_text_name">
+
+        <com.univapay.views.CustomEditText
+            android:id="@+id/address_edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_address_name"
+            android:nextFocusDown="@+id/address_edit_text_line1"
+            app:drawableStart="@drawable/ic_name"
+            app:isRequired="true"
+            app:isRequiredErrorMessage="@string/checkout_required"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/address_edit_text_line1">
+
+        <com.univapay.views.CustomEditText
+            android:id="@+id/address_edit_text_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_address_line1"
+            android:nextFocusDown="@+id/address_edit_text_line2"
+            app:drawableStart="@drawable/ic_address"
+            app:isRequired="true"
+            app:isRequiredErrorMessage="@string/checkout_required"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/address_edit_text_line2">
+
+        <com.univapay.views.CustomEditText
+            android:id="@+id/address_edit_text_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_address_line2"
+            android:nextFocusDown="@+id/address_edit_text_city"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/address_edit_text_city">
+
+            <com.univapay.views.CustomEditText
+                android:id="@+id/address_edit_text_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/hint_drawable_padding"
+                android:hint="@string/checkout_address_city"
+                android:nextFocusDown="@+id/address_edit_text_state"
+                app:drawableStart="@drawable/ic_city"
+                app:isRequired="true"
+                app:isRequiredErrorMessage="@string/checkout_required"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/address_edit_text_state">
+
+            <com.univapay.views.CustomEditText
+                android:id="@+id/address_edit_text_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/hint_drawable_padding"
+                android:hint="@string/checkout_address_state"
+                app:drawableStart="@drawable/ic_place"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/address_edit_text_country">
+
+            <com.univapay.views.CountryEditText
+                android:id="@+id/address_edit_text_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nextFocusDown="@+id/address_edit_text_post_code"
+                android:drawablePadding="@dimen/hint_drawable_padding"
+                android:hint="@string/checkout_address_country"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/address_edit_text_post_code">
+
+            <com.univapay.views.CustomEditText
+                android:id="@+id/address_edit_text_post_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/hint_drawable_padding"
+                android:hint="@string/checkout_address_postcode"
+                app:drawableStart="@drawable/ic_post_code"
+                app:isRequired="true"
+                app:isRequiredErrorMessage="@string/checkout_required"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+</LinearLayout>

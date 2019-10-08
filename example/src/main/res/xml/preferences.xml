@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:title="@string/pref_title"
+        android:defaultValue="@string/pref_title_default"
+        android:summary="@string/pref_title_summary"
+        android:key="pref_title"
+        />
+
+    <EditTextPreference
+        android:title="@string/pref_description"
+        android:defaultValue="@string/pref_description_default"
+        android:summary="The description to be shown in the checkout."
+        android:key="pref_description"
+        />
+
+    <EditTextPreference
+        android:title="@string/pref_amount_header"
+        android:defaultValue="1000"
+        android:summary="@string/pref_amount_summary"
+        android:key="pref_amount"
+        />
+
+    <ListPreference
+        android:title="@string/pref_currencies_header"
+        android:entries="@array/currencies"
+        android:entryValues="@array/currencies"
+        android:summary="@string/pref_currencies_summary"
+        android:defaultValue="JPY"
+        android:key="pref_currency"
+        />
+
+    <ListPreference
+        android:title="@string/pref_checkout_types_header"
+        android:entries="@array/checkout_types"
+        android:entryValues="@array/checkout_types"
+        android:summary="@string/pref_checkout_types_header_summary"
+        android:defaultValue="@string/pref_checkout_type_payment"
+        android:key="pref_checkout_type"
+        />
+
+    <ListPreference
+        android:title="@string/pref_token_types_header"
+        android:key="pref_token_type"
+        android:entries="@array/token_types"
+        android:entryValues="@array/token_types"
+        android:summary="@string/pref_token_types_summary"
+        android:defaultValue="@string/pref_token_type_one_time"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_require_address_header"
+        android:summary="@string/pref_require_address_summary"
+        android:key="pref_require_address"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_require_cvv_header"
+        android:summary="@string/pref_require_cvv_summary"
+        android:key="pref_require_cvv"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/pref_allow_remembering_card_header"
+        android:summary="@string/pref_allow_remembering_card_summary"
+        android:key="pref_allow_remembering_card"
+    />
+    <ListPreference
+        android:title="@string/pref_installment_plan_type_header"
+        android:entries="@array/installment_plan_type"
+        android:entryValues="@array/installment_plan_type"
+        android:summary="@string/pref_installment_plan_type_summary"
+        android:defaultValue="@string/pref_installment_plan_type_none"
+        android:key="pref_installment_plan_type"
+        />
+
+
+</PreferenceScreen>

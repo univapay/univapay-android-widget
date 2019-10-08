@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/checkout_konbini_spinner_element_size"
+    android:paddingStart="16dp"
+    >
+
+    <ImageView
+        android:id="@+id/konbini_spinner_element_image"
+        android:layout_width="@dimen/checkout_stored_konbini_logo_size"
+        android:layout_height="@dimen/checkout_stored_konbini_logo_size"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/konbini_spinner_element_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/checkout_stored_konbini_logo_size"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/checkout_stored_konbini_text_margin"
+        />
+
+</android.support.constraint.ConstraintLayout>

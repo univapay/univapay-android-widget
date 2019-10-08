@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Checkout button-->
+    <string name="checkout_button_next">次へ</string>
+    <string name="checkout_button_subscribe">確認</string>
+    <string name="checkout_button_pay">確認</string>
+    <string name="checkout_button_finish">閉じる</string>
+    <string name="checkout_button_add">新規登録</string>
+
+    <!--Checkout config-->
+    <string name="checkout_config_title">小タイトル</string>
+    <string name="checkout_config_description">詳細</string>
+
+    <!--Subscription details-->
+    <string name="subscription_details_title">次の支払い</string>
+    <string name="subscription_details_fixed_cycles"> </string>
+    <string name="subscription_details_fixed_cycle_amount"> </string>
+    <string name="subscription_details_revolving">リボ払い</string>
+    <string name="subscription_details_initial_amount_of">初回:</string>
+    <string name="subscription_payment_schedule_error">支払い計画を取得することができませんでした</string>
+
+    <string name="subscription_details_initial_amount_paragraph">（本日：%1$s）</string>
+    <string name="subscription_periodic_paragraph">%1$sを%2$s支払う\n%3$s</string>
+    <string name="subscription_fixed_cycles_paragraph">%1$sを%2$d回（%3$s）で支払う\n%4$s</string>
+    <string name="subscription_fixed_cycles_amount_paragraph">%1$sを%3$s%2$sで支払う\n%4$s</string>
+    <string name="subscription_revolving_paragraph">%1$sをリボ払い（%2$s）で支払う\n%3$s</string>
+
+    <!--Payment details-->
+    <string name="checkout_payment_details_paragraph">%1$sを支払う</string>
+
+    <!--Payment types-->
+    <string name="checkout_payment_type_select">支払い方法を選択して下さい</string>
+    <string name="checkout_payment_type_card">カード決済</string>
+    <string name="checkout_payment_type_konbini">コンビニ決済</string>
+
+    <!--Address fragment-->
+    <string name="checkout_address_country_search">検索</string>
+    <string name="checkout_address_name">姓名</string>
+    <string name="checkout_address_line1">番地</string>
+    <string name="checkout_address_line2">物件名・部屋番号</string>
+    <string name="checkout_address_city">市区町村</string>
+    <string name="checkout_address_state">都道府県</string>
+    <string name="checkout_address_country">国</string>
+    <string name="checkout_address_postcode">郵便番号</string>
+    <string name="checkout_address_search">検索</string>
+
+    <!--Card details fragment-->
+    <string name="checkout_carddetails_email">メール</string>
+    <string name="checkout_carddetails_name">名義人</string>
+    <string name="checkout_carddetails_number">カード番号</string>
+    <string name="checkout_carddetails_expiry">有効期限</string>
+    <string name="checkout_carddetails_cvv">@string/cvv</string>
+    <string name="checkout_carddetails_remember">カード情報を保存する</string>
+    <string name="checkout_carddetails_expiry_dialog_title">有効期限を指定する</string>
+    <string name="checkout_carddetails_expiry_dialog_positive">確認</string>
+    <string name="checkout_carddetails_expiry_dialog_negative">戻る</string>
+
+    <!--Konbini details fragment-->
+    <string name="checkout_konbini_choose">コンビニエンスストアを選択してください</string>
+    <string name="checkout_konbini_email">メール</string>
+    <string name="checkout_konbini_phone">電話番号</string>
+    <string name="checkout_konbini_name">名前</string>
+    <string name="checkout_konbini_store">コンビニエンスストア</string>
+    <string name="checkout_konbini_remember">情報を保存する</string>
+
+    <string name="checkout_konbini_seven_eleven">セブンイレブン</string>
+    <string name="checkout_konbini_family_mart">ファミリーマート</string>
+    <string name="checkout_konbini_lawson">ローソン</string>
+    <string name="checkout_konbini_mini_stop">ミニストップ</string>
+    <string name="checkout_konbini_seico_mart">セイコーマート</string>
+    <string name="checkout_konbini_daily_yamazaki">デイリーヤマザキ</string>
+
+    <string-array name="checkout_convenience_stores_names">
+        <item>@string/checkout_konbini_seven_eleven</item>
+        <item>@string/checkout_konbini_family_mart</item>
+        <item>@string/checkout_konbini_lawson</item>
+        <item>@string/checkout_konbini_mini_stop</item>
+        <item>@string/checkout_konbini_seico_mart</item>
+        <item>@string/checkout_konbini_daily_yamazaki</item>
+    </string-array>
+
+    <!--Validation-->
+    <string name="checkout_required">必須</string>
+    <string name="checkout_invalid">無効</string>
+    <string name="checkout_cvv_required">%sは必須</string>
+    <string name="checkout_cvv_invalid">%sは必須</string>
+
+    <!--Stored cards fragment-->
+    <string name="checkout_stored_new">新しいカード</string>
+    <string name="checkout_stored_select">カードを選択する</string>
+    <string name="checkout_stored_bottom_pay_label">支払う</string>
+    <string name="checkout_stored_bottom_qr_label">QRコードを表示する</string>
+    <string name="checkout_stored_bottom_delete_label">削除</string>
+    <string name="checkout_stored_bottom_title_main_card">カードホルダー： %s</string>
+    <string name="checkout_stored_bottom_title_secondary_card">カードの最後の４桁 %d</string>
+    <string name="checkout_stored_bottom_title_main_konbini">コンビニエンスストア: %s</string>
+    <string name="checkout_stored_bottom_title_secondary_konbini">電話番号: %s</string>
+
+    <!--Process-->
+    <string name="checkout_process_wait">支払い処理中。</string>
+    <string name="checkout_process_success">支払い処理に成功しました。</string>
+    <string name="checkout_process_failure">支払い処理に失敗しました</string>
+    <string name="checkout_process_undetermined">支払い処理はタイムアウトしました。</string>
+
+    <!--Navigation bar-->
+    <string name="checkout_bar_title">UnivaPay</string>
+
+    <!--Dialogs-->
+    <string name="checkout_recurring_token_cvv_challenge_title"><b>セキュリティコード</b>を入力してください</string>
+    <string name="checkout_recurring_token_permission_message">
+    カード情報を保存します
+    </string>
+    <string name="checkout_recurring_token_consent">
+        同意します
+    </string>
+    <string name="checkout_recurring_token_permission_positive_button">
+    確認
+    </string>
+    <string name="checkout_recurring_token_permission_negative_button">
+    戻る
+    </string>
+    <string name="checkout_qr_display_refresh_notice">
+        *このQRコードは短期間で自動的に更新されます。
+    </string>
+    <string name="checkout_qr_display_wait">
+        Please wait...
+    </string>
+    <string name="checkout_qr_display_not_connected">
+        You need to connect to the internet to display a QR code.
+    </string>
+    <string name="checkout_qr_display_request_error">
+        An error happened while fetching your QR code. Please try again.
+    </string>
+
+    <!--Subscription periods-->
+    <string name="checkout_subscription_1d">毎日</string>
+    <string name="checkout_subscription_1w">毎週</string>
+    <string name="checkout_subscription_2w">隔週</string>
+    <string name="checkout_subscription_1m">毎月</string>
+    <string name="checkout_subscription_3m">四半期</string>
+    <string name="checkout_subscription_6m">半期</string>
+    <string name="checkout_subscription_1y">毎年</string>
+    <string name="checkout_subscription_unit_1d">毎日</string>
+    <string name="checkout_subscription_unit_1w">毎週</string>
+    <string name="checkout_subscription_unit_2w">隔週</string>
+    <string name="checkout_subscription_unit_1m">毎月</string>
+    <string name="checkout_subscription_unit_3m">四半期に1度</string>
+    <string name="checkout_subscription_unit_6m">半年に1度</string>
+    <string name="checkout_subscription_unit_1y">毎年</string>
+
+    <!--Errors-->
+    <string name="checkout_error_service_unavailable_close_button">閉じる</string>
+    <string name="checkout_error_service_unavailable_title">サービス利用不可</string>
+    <string name="checkout_error_service_unavailable_description">現在一時的にサービスが利用できません。お手数ですが、しばらくしてからもう一度お試しください。</string>
+    <string name="checkout_error_required_value">%s is required</string>
+    <string name="checkout_error_invalid">%s is invalid</string>
+    <string name="checkout_error_invalid_card_number">Card Number is invalid</string>
+    <string name="checkout_error_invalid_email">Email is invalid</string>
+    <string name="checkout_error_invalid_cvv">CVV is invalid</string>
+    <string name="checkout_error_invalid_card_brand">このカードブランドには対応していません。</string>
+    <string name="checkout_error_invalid_format_currency">Currency is invalid</string>
+    <string name="checkout_payment_error_301">The card number is not a valid</string>
+    <string name="checkout_payment_error_302">The card’s expiration month is invalid</string>
+    <string name="checkout_payment_error_303">The card’s expiration year is invalid</string>
+    <string name="checkout_payment_error_304">The card is expired</string>
+    <string name="checkout_payment_error_305">The card’s CVV is incorrect</string>
+    <string name="checkout_payment_error_306">The card was rejected</string>
+    <string name="checkout_payment_error_307">The card is invalid</string>
+    <string name="checkout_payment_error_308">The charge contains invalid data</string>
+    <string name="checkout_payment_error_309">There was a processing error</string>
+    <string name="checkout_payment_error_unknown">Unknown processing error</string>
+
+    <!--CVV-->
+    <string name="cvv">CVV</string>
+    <string name="cvc">CVC</string>
+    <string name="cid">CID</string>
+    <string name="cvn">CVN</string>
+
+</resources>

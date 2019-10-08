@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/simulated_payments_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/checkout_simulated_payment_message_height"
+    >
+
+    <TextView
+        android:id="@+id/simulated_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/field_margin_left"
+        android:layout_marginEnd="@dimen/field_margin_right"
+        android:gravity="center"
+        android:textColor="@color/checkout_primary_text"
+        android:fontFamily="@font/muli_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

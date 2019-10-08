@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Checkout.Header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image_view_checkout_logo"
+        style="@style/Checkout.Logo"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/ic_default_logo"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_checkout_title"
+        style="@style/Checkout.Title.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_checkout_description"
+        style="@style/Checkout.Title.Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_checkout_other_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/muli_black"
+        android:gravity="center"
+        android:textColor="@color/checkout_main_text_dark"
+        android:textSize="17sp"
+        />
+
+</LinearLayout>

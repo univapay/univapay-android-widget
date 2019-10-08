@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/card_detail_edit_text_email">
+
+        <com.univapay.views.EmailEditText
+            android:id="@+id/card_detail_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_carddetails_email"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/card_detail_edit_text_cardholder_name"
+            app:drawableStart="@drawable/ic_email"
+            app:isRequired="true"
+            app:isRequiredErrorMessage="@string/checkout_required"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/card_detail_edit_text_cardholder_name">
+
+        <com.univapay.views.CustomEditText
+            android:id="@+id/card_detail_edit_text_cardholder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_carddetails_name"
+            android:nextFocusDown="@+id/card_detail_edit_text_card_number"
+            app:drawableStart="@drawable/ic_cardholder"
+            app:isRequired="true"
+            app:isRequiredErrorMessage="@string/checkout_required"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/card_detail_edit_text_card_number">
+
+        <com.univapay.views.CardNumberEditText
+            android:id="@+id/card_detail_edit_text_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_carddetails_number"
+            android:nextFocusDown="@+id/card_detail_edit_text_expiry"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/card_detail_edit_text_expiry">
+
+            <com.univapay.views.ExpiryEditText
+                android:id="@+id/card_detail_edit_text_expiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/hint_drawable_padding"
+                android:hint="@string/checkout_carddetails_expiry"
+                android:nextFocusDown="@+id/card_detail_edit_text_security"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/card_detail_edit_text_security_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@+id/card_detail_edit_text_security">
+
+            <com.univapay.views.SecurityEditText
+                android:id="@+id/card_detail_edit_text_security"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/hint_drawable_padding"
+                android:hint="@string/checkout_carddetails_cvv"
+                app:drawableStart="@drawable/ic_card_cvc"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/check_can_remember_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/checkout_carddetails_remember"/>
+</LinearLayout>

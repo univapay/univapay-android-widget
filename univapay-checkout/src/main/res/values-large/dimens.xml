@@ -1,0 +1,20 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+
+    <!-- Text sizes -->
+    <dimen name="checkout_main_text"></dimen>
+    <dimen name="checkout_actionbutton_button">40sp</dimen>
+    <dimen name="checkout_actionbutton_smalltext">26sp</dimen>
+
+    <!--Logo sizes-->
+    <dimen name="checkout_stored_konbini_logo_size">50dp</dimen>
+    <dimen name="checkout_stored_konbini_text_margin">58dp</dimen>
+    <dimen name="checkout_konbini_spinner_element_size">66dp</dimen>
+    <dimen name="checkout_stored_card_logo_size">60dp</dimen>
+    <dimen name="checkout_stored_card_text_margin">68dp</dimen>
+
+</resources>

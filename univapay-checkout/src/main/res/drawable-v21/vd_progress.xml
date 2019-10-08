@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:width="240dp"
+  android:height="240dp"
+  android:viewportHeight="240"
+  android:viewportWidth="240">
+  <group
+    android:pivotX="120"
+    android:pivotY="120"
+    android:scaleX="0.91"
+    android:scaleY="0.91">
+    <group
+      android:name="progress_spinner"
+      android:translateX="120"
+      android:translateY="120">
+      <path
+        android:name="progress_bar"
+        android:pathData="M 0,-120 a 120,120 0 1,1 0,240 a 120,120 0 1,1 0,-240"
+        android:strokeColor="@color/checkout_main_color"
+        android:strokeLineCap="square"
+        android:strokeLineJoin="miter"
+        android:strokeWidth="20"
+        android:trimPathEnd="0"
+        android:trimPathStart="0"/>
+      <group
+        android:translateX="-120"
+        android:translateY="-120">
+        <path
+            android:name="progress_bar_check"
+            android:pathData="M 120,0 a 120,120 0 1,1 0,240 a 120,120 0 1,1 0,-240 C 224,30 162,83 162,83 L 86.5,158.5 L 60.45,132.45"
+            android:strokeColor="@color/checkout_progress_animation_success_color"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="20"
+            android:trimPathEnd="0"
+            android:trimPathStart="0"/>
+      </group>
+
+      <group
+          android:translateX="-120"
+          android:translateY="-120">
+        <path
+            android:name="progress_bar_undetermined_entry"
+            android:pathData="M 120,0 a 120,120 0 1,1 0,240 a 120,120 0 1,1 0,-240 C 174,30 162,53 120,60 L 120,150"
+            android:strokeColor="@color/checkout_progress_animation_undetermined_color"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="20"
+            android:trimPathEnd="0"
+            android:trimPathStart="0"/>
+      </group>
+      <group
+          android:translateX="-120"
+          android:translateY="-120">
+        <path
+            android:name="progress_bar_undetermined_dot"
+            android:pathData="M 120,189 L 120,190"
+            android:strokeColor="@color/checkout_progress_animation_undetermined_color"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="24"
+            android:trimPathEnd="0"
+            android:trimPathStart="0"/>
+      </group>
+
+      <group
+          android:translateX="-120"
+          android:translateY="-120">
+        <path
+            android:name="progress_bar_cross_entry"
+            android:pathData="M 120,0 a 120,120 0 1,1 0,240 a 120,120 0 1,1 0,-240 C 224,30 162,83 162,83 L 120,120"
+            android:strokeColor="@color/checkout_progress_animation_fail_color"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="20"
+            android:trimPathEnd="0"
+            android:trimPathStart="0"/>
+      </group>
+
+      <group
+          android:translateX="-120"
+          android:translateY="-120">
+        <path
+            android:name="progress_bar_cross_RB"
+            android:pathData="M 120,120 L 173.5,173.5"
+            android:strokeColor="@color/checkout_progress_animation_fail_color"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="20"
+            android:trimPathEnd="0"
+            android:trimPathStart="0"/>
+        <path
+            android:name="progress_bar_cross_LT"
+            android:pathData="M 120,120 L 66.5,66.5"
+            android:strokeColor="@color/checkout_progress_animation_fail_color"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="20"
+            android:trimPathEnd="0"
+            android:trimPathStart="0"/>
+        <path
+            android:name="progress_bar_cross_LB"
+            android:pathData="M 120,120 L 66.5,173.5"
+            android:strokeColor="@color/checkout_progress_animation_fail_color"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="20"
+            android:trimPathEnd="0"
+            android:trimPathStart="0"/>
+        <path
+            android:name="progress_bar_cross_RT"
+            android:pathData="M 120,120 L 173.5, 66.5"
+            android:strokeColor="@color/checkout_progress_animation_fail_color"
+            android:strokeLineCap="square"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="20"
+            android:trimPathEnd="0"
+            android:trimPathStart="0"/>
+      </group>
+    </group>
+  </group>
+</vector>

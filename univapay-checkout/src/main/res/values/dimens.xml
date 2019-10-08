@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="hint_drawable_padding">6dp</dimen>
+    <dimen name="field_margin_left">16dp</dimen>
+    <dimen name="field_margin_right">16dp</dimen>
+
+    <dimen name="cp_dialog_width">200dp</dimen>
+    <dimen name="cp_dialog_height">300dp</dimen>
+
+    <!--Text sizes -->
+    <dimen name="checkout_main_text">16sp</dimen>
+    <dimen name="checkout_actionbutton_button">18sp</dimen>
+    <dimen name="checkout_actionbutton_smalltext">14sp</dimen>
+
+    <!--Logo sizes-->
+    <dimen name="checkout_stored_konbini_logo_size">50dp</dimen>
+    <dimen name="checkout_stored_konbini_text_margin">58dp</dimen>
+    <dimen name="checkout_konbini_spinner_element_size">66dp</dimen>
+    <dimen name="checkout_stored_card_logo_size">60dp</dimen>
+    <dimen name="checkout_stored_card_text_margin">68dp</dimen>
+
+    <!--Simulated payments-->
+    <dimen name="checkout_simulated_payment_message_height">40dp</dimen>
+
+</resources>

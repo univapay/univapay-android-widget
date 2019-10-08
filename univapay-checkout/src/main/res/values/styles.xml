@@ -1,0 +1,166 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CheckoutTheme">
+    </style>
+
+    <style name="CheckoutTheme.App" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--Base Theme-->
+        <item name="colorPrimary">@color/checkout_color_primary</item>
+        <item name="colorPrimaryDark">@color/checkout_color_primary_dark</item>
+        <item name="colorAccent">@color/checkout_main_color</item>
+        <item name="android:textColorPrimary">@color/checkout_primary_text</item>
+        <item name="android:textColorSecondary">@color/checkout_secondary_text</item>
+        <!---->
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="dialogTheme">@style/CheckoutTheme.Dialog</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Alert</item>
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <!--<item name="android:textSize">@dimen/checkout_actionbutton_button</item>-->
+    </style>
+
+    <style name="CheckoutTheme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <!--Base Theme-->
+        <item name="colorPrimary">@color/checkout_color_primary</item>
+        <item name="colorPrimaryDark">@color/checkout_color_primary_dark</item>
+        <item name="colorAccent">@color/checkout_main_color</item>
+        <item name="android:textColorPrimary">@color/checkout_primary_text</item>
+        <item name="android:textColorSecondary">@color/checkout_secondary_text</item>
+        <!---->
+
+        <item name="android:listDivider">@drawable/cards_list_divider</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:fontFamily">@font/muli_regular</item>
+        <item name="android:textSize">@dimen/checkout_main_text</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/checkout_main_text</item>
+        <item name="android:textColorSecondary">@color/checkout_main_text</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Checkout Alert Dialog Theme -->
+    <style name="AppTheme.Dialog.Alert" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/checkout_color_primary</item>
+        <item name="colorPrimaryDark">@color/checkout_color_primary_dark</item>
+        <item name="colorAccent">@color/checkout_main_color</item>
+    </style>
+
+
+    <style name="Checkout" parent="@style/CheckoutTheme">
+    </style>
+
+    <style name="Checkout.Container">
+        <item name="android:layout_marginLeft">@dimen/field_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/field_margin_right</item>
+    </style>
+    
+    <style name="Checkout.Title.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/checkout_main_text_dark</item>
+    </style>
+
+    <style name="Checkout.Title.Description" parent="@android:style/TextAppearance.Small">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/checkout_secondary_text</item>
+    </style>
+
+    <style name="Checkout.Header">
+        <item name="android:background">@color/checkout_secondary_background</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="Checkout.Logo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+
+    <style name="Checkout.ActionButton" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:paddingLeft">26dp</item>
+        <item name="android:paddingRight">26dp</item>
+    </style>
+
+    <style name="Checkout.ActionButton.Button" parent="Widget.AppCompat.Button.Colored">
+        <!--<item name="android:textSize">@dimen/checkout_actionbutton_button</item>-->
+        <item name="android:fontFamily">@font/muli_bold</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="Checkout.ActionButton.Text">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <style name="Checkout.ActionButton.SmallText">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <!--<item name="android:textSize">@dimen/checkout_actionbutton_smalltext</item>-->
+        <item name="android:textColor">@color/checkout_secondary_text</item>
+    </style>
+
+    <style name="Checkout.Process.Animation" parent="">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">75dp</item>
+    </style>
+
+    <style name="Checkout.Process.WaitMsg.Text" parent="@android:style/TextAppearance.Large">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:textColor">@color/checkout_secondary_text</item>
+    </style>
+
+    <style name="Checkout.SubscriptionDetails.Title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:textColor">@color/checkout_primary_text</item>
+        <item name="android:background">@color/checkout_main_background</item>
+    </style>
+
+    <style name="Checkout.SubscriptionDetails.Amount" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:textColor">@color/checkout_primary_text</item>
+        <item name="android:background">@color/checkout_main_background</item>
+    </style>
+
+    <style name="Checkout.SubscriptionDetails.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textAlignment" tools:targetApi="jelly_bean_mr1">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:textColor">@color/checkout_secondary_text</item>
+        <item name="android:background">@color/checkout_main_background</item>
+    </style>
+
+    <style name="Checkout.Divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/checkout_secondary_text</item>
+    </style>
+
+
+
+</resources>

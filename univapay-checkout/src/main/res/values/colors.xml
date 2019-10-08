@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="checkout_main_background">#fafafa</color>
+    <color name="checkout_secondary_background">#fafafa</color>
+    <color name="checkout_main_color">#485E88</color>
+
+    <color name="checkout_main_text">#fafafa</color>
+    <color name="checkout_primary_text">@android:color/black</color>
+    <color name="checkout_secondary_text">#757575</color>
+
+    <color name="checkout_main_color_accent">#193668</color>
+    <color name="checkout_main_text_dark">@android:color/black</color>
+    <color name="checkout_background_color_accent">@android:color/white</color>
+
+    <color name="checkout_color_primary">#485E88</color>
+    <color name="checkout_color_primary_dark">#485E88</color>
+
+    <color name="checkout_header_bottom_line">@android:color/darker_gray</color>
+    <color name="checkout_action_button_text_color">@android:color/white</color>
+    <color name="checkout_drawable_color">#3f51b5</color>
+
+    <color name="checkout_progress_animation_color">#485E88</color>
+    <color name="checkout_progress_animation_success_color">#2E7D32</color>
+    <color name="checkout_progress_animation_success_icon_color">@android:color/white</color>
+    <color name="checkout_progress_animation_fail_color">#D50000</color>
+    <color name="checkout_progress_animation_fail_icon_color">@android:color/white</color>
+    <color name="checkout_progress_animation_undetermined_color">#193668</color>
+    <color name="checkout_progress_animation_undetermined_icon_color">@android:color/white</color>
+</resources>

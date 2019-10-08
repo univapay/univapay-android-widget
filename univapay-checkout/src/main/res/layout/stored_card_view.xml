@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintTop_toBottomOf="parent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/stored_card_paper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <ImageView
+            android:id="@+id/stored_card_logo"
+            android:layout_width="@dimen/checkout_stored_card_logo_size"
+            android:layout_height="@dimen/checkout_stored_card_logo_size"
+            android:layout_alignBottom="@id/stored_card_number"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:contentDescription="@null"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/stored_card_number"
+            app:layout_constraintRight_toLeftOf="@+id/stored_card_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stored_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/checkout_stored_card_logo_size"
+            android:layout_marginStart="@dimen/checkout_stored_card_text_margin"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/stored_card_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

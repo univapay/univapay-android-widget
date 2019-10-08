@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="japan">日本</string>
+
+    <!--Main demo screen-->
+    <string name="demo_title">
+        <b>Try the UnivaPay Checkout Widget\n\n</b>
+    </string>
+
+    <string name="demo_message">
+        This demo will help you understand all the possible settings available for the UnivaPay Checkout widget.\n\n
+        First, you\'ll need to go to your \"UnivaPay Merchant Console\", create a merchant account and create a TEST MODE application JWT.\n\n
+        Tap on the \"Configure\" button to set up your widget, then tap on \"Checkout\" to display the widget using the configuration you provided.
+    </string>
+    <string name="demo_configure_button">Configuration</string>
+    <string name="demo_checkout_button">Checkout</string>
+
+    <!--Preferences screen-->
+
+    <string name="pref_title">Widget\'s Title</string>
+    <string name="pref_title_default">Example Title</string>
+    <string name="pref_title_summary">The title to be shown in the checkout.</string>
+    <string name="pref_description">Widget\'s Description</string>
+    <string name="pref_description_default">Example Description</string>
+    <string name="pref_description_summary">The description to be shown in the checkout.</string>
+    <string name="pref_amount_header">Amount</string>
+    <string name="pref_amount_summary">
+        The amount of the transaction as an integer, adding the corresponding zeroes for the currency unit (for example, USD 100 = 10000).
+    </string>
+    <string name="pref_currencies_header">Currency</string>
+    <string name="pref_currencies_summary">
+        The currency of the transaction.
+    </string>
+
+    <string name="pref_checkout_types_header">Checkout Types</string>
+    <string name="pref_checkout_types_header_summary">
+        Whether you want a full payment or a token-only transaction
+    </string>
+
+    <string name="pref_token_types_header">Token Types</string>
+    <string name="pref_token_types_summary">
+        The type of token to be created
+    </string>
+
+    <string name="pref_require_address_header">Require Billing Address</string>
+    <string name="pref_require_address_summary">
+        Require the user to input its billing address
+    </string>
+
+    <string name="pref_allow_remembering_card_header">Allow to remember card data</string>
+    <string name="pref_allow_remembering_card_summary">
+        Allow the user to store his cards data for easy payments
+    </string>
+
+    <string name="pref_require_cvv_header">Require CVV</string>
+    <string name="pref_require_cvv_summary">
+        Require the user to input the card\'s CVV (works only if your merchant configuration allows empty CVVs)
+    </string>
+
+    <string name="pref_installment_plan_type_header">Installment Plan Type</string>
+    <string name="pref_installment_plan_type_summary">
+        The type of Installment
+    </string>
+
+    <string name="pref_checkout_type_token">Token</string>
+    <string name="pref_checkout_type_payment">Payment</string>
+    <string name="pref_token_type_one_time">One-Time</string>
+    <string name="pref_token_type_recurring">Recurring</string>
+    <string name="pref_token_type_subscription">Subscription</string>
+    <string name="pref_installment_plan_type_none">None</string>
+
+    <string-array name="checkout_types">
+        <item>@string/pref_checkout_type_token</item>
+        <item>@string/pref_checkout_type_payment</item>
+    </string-array>
+
+    <string-array name="token_types">
+        <item>@string/pref_token_type_one_time</item>
+        <item>@string/pref_token_type_recurring</item>
+        <item>@string/pref_token_type_subscription</item>
+    </string-array>
+
+    <string-array name="currencies">
+        <item>JPY</item>
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+
+    <string-array name="installment_plan_type">
+        <item>None</item>
+        <item>Revolving</item>
+        <item>Fixed Cycles</item>
+        <item>Fixed Cycle Amount</item>
+    </string-array>
+</resources>

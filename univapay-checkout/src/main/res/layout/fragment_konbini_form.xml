@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/konbini_edit_text_name">
+
+        <com.univapay.views.CustomEditText
+            android:id="@+id/konbini_edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_konbini_name"
+            android:nextFocusDown="@+id/address_edit_text_line1"
+            app:drawableStart="@drawable/ic_name"
+            app:isRequired="true"
+            app:isRequiredErrorMessage="@string/checkout_required"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/konbini_edit_text_email">
+
+        <com.univapay.views.EmailEditText
+            android:id="@+id/konbini_edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_konbini_email"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/card_detail_edit_text_cardholder_name"
+            app:drawableStart="@drawable/ic_email"
+            app:isRequired="true"
+            app:isRequiredErrorMessage="@string/checkout_required"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/konbini_edit_phone_local_number">
+
+        <com.univapay.views.PhoneEditText
+            android:id="@+id/konbini_edit_phone_local_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            android:hint="@string/checkout_konbini_phone"
+            android:nextFocusDown="@+id/address_edit_text_line1"
+            app:drawableStart="@drawable/ic_name"
+            app:isRequired="true"
+            app:isRequiredErrorMessage="@string/checkout_required"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/konbini_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:prompt="@string/checkout_konbini_choose"
+        android:layout_marginTop="16dp"
+        />
+
+    <CheckBox
+        android:id="@+id/check_can_remember_konbini_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout_konbini_remember"
+        android:layout_marginTop="16dp"
+        />
+
+
+</LinearLayout>

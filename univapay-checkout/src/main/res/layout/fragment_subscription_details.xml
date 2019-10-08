@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_view_subscription_details_title"
+        style="@style/Checkout.SubscriptionDetails.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_extrabold"
+        android:text="@string/subscription_details_title"
+        />
+
+    <View
+        android:id="@+id/divider_subscription"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_subscription_details_title"
+        style="@style/Checkout.Divider" />
+
+    <TextView
+        android:id="@+id/simulated_payments_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/field_margin_left"
+        android:layout_marginEnd="@dimen/field_margin_right"
+        android:fontFamily="@font/muli_light"
+        android:textColor="@color/checkout_primary_text"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/divider_subscription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/simulated_payments_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/simulated_payments_messages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

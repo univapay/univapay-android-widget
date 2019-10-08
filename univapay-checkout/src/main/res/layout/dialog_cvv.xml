@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:labelFor="@+id/cvv_challenge"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        >
+
+        <com.univapay.views.SecurityEditText
+            android:id="@+id/cvv_challenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/hint_drawable_padding"
+            app:drawableStart="@drawable/ic_card_cvc"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

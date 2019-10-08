@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/checkout_main_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/loading_animation"
+            style="@style/Checkout.Process.Animation"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            app:srcCompat="@drawable/vd_loading"
+            />
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

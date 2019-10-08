@@ -1,0 +1,179 @@
+<resources>
+
+    <!--Checkout button-->
+    <string name="checkout_button_next">Next</string>
+    <string name="checkout_button_subscribe">Subscribe</string>
+    <string name="checkout_button_pay">Pay</string>
+    <string name="checkout_button_finish">Close</string>
+    <string name="checkout_button_add">Add New</string>
+
+    <!--Checkout config-->
+    <string name="checkout_config_title">Title</string>
+    <string name="checkout_config_description">Description</string>
+
+    <!--Subscription details-->
+    <string name="subscription_details_title">Next Payments</string>
+    <string name="subscription_details_fixed_cycles">Fixed Cycles</string>
+    <string name="subscription_details_fixed_cycle_amount">Fixed Cycle Amount</string>
+    <string name="subscription_details_revolving">Revolving</string>
+    <string name="subscription_details_initial_amount_of">Initial Amount of </string>
+    <string name="subscription_payment_schedule_error">Could not retrieve payment schedule</string>
+
+    <string name="subscription_details_initial_amount_paragraph">(%1$s today)</string>
+    <string name="subscription_periodic_paragraph">Pay %1$s %2$s\n %3$s</string>
+    <string name="subscription_fixed_cycles_paragraph">Pay %1$s over %2$d %3$s Installments\n%4$s</string>
+    <string name="subscription_fixed_cycles_amount_paragraph">Pay %1$s in %3$s Installments\n%4$s</string>
+    <string name="subscription_revolving_paragraph">Pay %1$s in %2$s Revolving Payments\n%3$s</string>
+
+    <!--Payment details-->
+    <string name="checkout_payment_details_paragraph">Pay %1$s</string>
+
+    <!--Payment types-->
+    <string name="checkout_payment_type_select">Choose a Payment Type</string>
+    <string name="checkout_payment_type_card">Card</string>
+    <string name="checkout_payment_type_konbini">Convenience Store</string>
+
+    <!--Address fragment-->
+    <string name="checkout_address_country_search">Search&#8230;</string>
+    <string name="checkout_address_name">Name</string>
+    <string name="checkout_address_line1">Address Line 1</string>
+    <string name="checkout_address_line2">Address Line 2</string>
+    <string name="checkout_address_city">City</string>
+    <string name="checkout_address_state">State</string>
+    <string name="checkout_address_country">Country</string>
+    <string name="checkout_address_postcode">Post Code</string>
+    <string name="checkout_address_search">Search&#8230;</string>
+
+    <!--Card details fragment-->
+    <string name="checkout_carddetails_email">Email</string>
+    <string name="checkout_carddetails_name">Cardholder Name</string>
+    <string name="checkout_carddetails_number">Card number</string>
+    <string name="checkout_carddetails_expiry">Expiry</string>
+    <string name="checkout_carddetails_cvv">@string/cvv</string>
+    <string name="checkout_carddetails_remember">Remember my card</string>
+    <string name="checkout_carddetails_expiry_dialog_title">Select Expiration Date</string>
+    <string name="checkout_carddetails_expiry_dialog_positive">OK</string>
+    <string name="checkout_carddetails_expiry_dialog_negative">Cancel</string>
+
+    <!--Konbini details fragment-->
+    <string name="checkout_konbini_email">Email</string>
+    <string name="checkout_konbini_phone">Phone Number</string>
+    <string name="checkout_konbini_name">Name</string>
+    <string name="checkout_konbini_store">Convenience Store</string>
+    <string name="checkout_konbini_remember">Remember my data</string>
+
+    <string name="checkout_konbini_choose">Choose a convenience store</string>
+    <string name="checkout_konbini_seven_eleven">7-Eleven</string>
+    <string name="checkout_konbini_family_mart">Family Mart</string>
+    <string name="checkout_konbini_lawson">LAWSON</string>
+    <string name="checkout_konbini_mini_stop">MINISTOP</string>
+    <string name="checkout_konbini_seico_mart">Seicomart</string>
+    <string name="checkout_konbini_daily_yamazaki">Daily YAMAZAKI</string>
+
+    <string-array name="checkout_convenience_stores_names">
+        <item>@string/checkout_konbini_seven_eleven</item>
+        <item>@string/checkout_konbini_family_mart</item>
+        <item>@string/checkout_konbini_lawson</item>
+        <item>@string/checkout_konbini_mini_stop</item>
+        <item>@string/checkout_konbini_seico_mart</item>
+        <item>@string/checkout_konbini_daily_yamazaki</item>
+    </string-array>
+
+    <!--Validation-->
+    <string name="checkout_required">Required</string>
+    <string name="checkout_invalid">Invalid</string>
+    <string name="checkout_cvv_required">%s is required</string>
+    <string name="checkout_cvv_invalid">%s is invalid</string>
+
+    <!--Stored cards fragment-->
+    <string name="checkout_stored_new">Pay with a new card</string>
+    <string name="checkout_stored_select">Select a card</string>
+    <string name="checkout_stored_bottom_pay_label">Process Payment</string>
+    <string name="checkout_stored_bottom_qr_label">Display QR Code</string>
+    <string name="checkout_stored_bottom_delete_label">Delete</string>
+    <string name="checkout_stored_bottom_title_main_card">Card holder: %s</string>
+    <string name="checkout_stored_bottom_title_secondary_card">Card ending with: %d</string>
+    <string name="checkout_stored_bottom_title_main_konbini">Convenience store: %s</string>
+    <string name="checkout_stored_bottom_title_secondary_konbini">Phone number: %s</string>
+
+    <!--Process-->
+    <string name="checkout_process_wait">Please Wait While Your Transaction Is Being Processed…</string>
+    <string name="checkout_process_success">Your payment has been successfully processed. \n\nThank you.</string>
+    <string name="checkout_process_failure">Unfortunately, your transaction can\'t be completed at this time. \nPlease try again later.</string>
+    <string name="checkout_process_undetermined">Your payment has timed out.</string>
+
+    <!--Navigation bar-->
+    <string name="checkout_bar_title">UnivaPay</string>
+
+    <!--Dialogs-->
+    <string name="checkout_recurring_token_cvv_challenge_title">Enter your card\'s CVV</string>
+    <string name="checkout_recurring_token_permission_message">
+    Your credit card data will be stored for future use.
+    </string>
+    <string name="checkout_recurring_token_consent">
+        I agree
+    </string>
+    <string name="checkout_recurring_token_permission_positive_button">
+    Continue
+    </string>
+    <string name="checkout_recurring_token_permission_negative_button">
+    Cancel
+    </string>
+    <string name="checkout_qr_display_refresh_notice">
+        *This QR code is temporary and will be refreshed periodically.
+    </string>
+    <string name="checkout_qr_display_wait">
+        Please wait...
+    </string>
+    <string name="checkout_qr_display_not_connected">
+        You need to connect to the internet to display a QR code.
+    </string>
+    <string name="checkout_qr_display_request_error">
+        An error happened while fetching your QR code. Please try again.
+    </string>
+
+    <!--Subscription periods-->
+    <string name="checkout_subscription_1d">Daily</string>
+    <string name="checkout_subscription_1w">Weekly</string>
+    <string name="checkout_subscription_2w">Biweekly</string>
+    <string name="checkout_subscription_1m">Monthly</string>
+    <string name="checkout_subscription_3m">Quarterly</string>
+    <string name="checkout_subscription_6m">Semiannually</string>
+    <string name="checkout_subscription_1y">Annually</string>
+    <string name="checkout_subscription_unit_1d">Day</string>
+    <string name="checkout_subscription_unit_1w">Week</string>
+    <string name="checkout_subscription_unit_2w">2 Weeks</string>
+    <string name="checkout_subscription_unit_1m">Month</string>
+    <string name="checkout_subscription_unit_3m">3 Months</string>
+    <string name="checkout_subscription_unit_6m">6 Months</string>
+    <string name="checkout_subscription_unit_1y">Year</string>
+
+    <!--Errors-->
+    <string name="checkout_error_service_unavailable_close_button">Close</string>
+    <string name="checkout_error_service_unavailable_description">Service is temporarily unavailable and payment cannot be processed.<p>Please try again later.</p></string>
+    <string name="checkout_error_service_unavailable_title">Service Unavailable</string>
+    <string name="checkout_error_required_value">%s is required</string>
+    <string name="checkout_error_invalid">%s is invalid</string>
+    <string name="checkout_error_invalid_card_number">Card Number is invalid</string>
+    <string name="checkout_error_invalid_email">Email is invalid</string>
+    <string name="checkout_error_invalid_cvv">CVV is invalid</string>
+    <string name="checkout_error_invalid_card_brand">Card brand is invalid</string>
+    <string name="checkout_error_invalid_format_currency">Currency is invalid</string>
+    <string name="checkout_payment_error_301">The card number is not a valid</string>
+    <string name="checkout_payment_error_302">The card’s expiration month is invalid</string>
+    <string name="checkout_payment_error_303">The card’s expiration year is invalid</string>
+    <string name="checkout_payment_error_304">The card is expired</string>
+    <string name="checkout_payment_error_305">The card’s CVV is incorrect</string>
+    <string name="checkout_payment_error_306">The card was rejected</string>
+    <string name="checkout_payment_error_307">The card is invalid</string>
+    <string name="checkout_payment_error_308">The charge contains invalid data</string>
+    <string name="checkout_payment_error_309">There was a processing error</string>
+    <string name="checkout_payment_error_unknown">Unknown processing error</string>
+
+    <!--CVV-->
+    <string name="cvv">CVV</string>
+    <string name="cvc">CVC</string>
+    <string name="cid">CID</string>
+    <string name="cvn">CVN</string>
+
+</resources>

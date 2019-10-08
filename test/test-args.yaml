@@ -1,0 +1,19 @@
+instrumentation-tests:
+  type: instrumentation
+  app: ./example/build/outputs/apk/debug/example-debug.apk
+  test: ./example/build/outputs/apk/androidTest/debug/example-debug-androidTest.apk
+  device-ids:
+    - Nexus10
+    - walleye
+    - HWMHA
+    - G8441
+  os-version-ids:
+    - 22
+    - 23
+    - 26
+    - 27
+  locales:
+    - en_US
+    - ja_JP
+
+  use-orchestrator: true

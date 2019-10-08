@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/card_payment_type_text_select"
+        style="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/checkout_main_background"
+        android:fontFamily="@font/muli_regular"
+        android:gravity="center"
+        android:textColor="@color/checkout_main_text_dark"
+        android:text="@string/checkout_payment_type_select"
+        android:textSize="20sp"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_payment_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/card_payment_type_text_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <TextView
+            android:id="@+id/card_payment_type_text"
+            style="@style/AppTheme.AppBarOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/checkout_background_color_accent"
+            android:fontFamily="@font/muli_black"
+            android:gravity="center"
+            android:textColor="@color/checkout_main_text_dark"
+            android:text="@string/checkout_payment_type_card"
+            android:textSize="20sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/konbini_payment_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/card_payment_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardUseCompatPadding="true"
+        >
+
+        <TextView
+            android:id="@+id/konbini_payment_type_text"
+            style="@style/AppTheme.AppBarOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/checkout_background_color_accent"
+            android:fontFamily="@font/muli_black"
+            android:gravity="center"
+            android:textColor="@color/checkout_main_text_dark"
+            android:text="@string/checkout_payment_type_konbini"
+            android:textSize="20sp" />
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
